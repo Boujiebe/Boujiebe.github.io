@@ -1,4 +1,8 @@
+'use strict';
+
 var gulp = require('gulp');
+var sass = require('gulp-sass');
+
 var $ = require('gulp-load-plugins')({
           pattern: ['gulp-*', 'del']
         });
@@ -36,6 +40,8 @@ gulp.task('default', ['build_tasks'], function() {
     'dev/assets/img/**/*',
     'dev/assets/fonts/**/*',
     'dev/**/*.php',
+    '!dev/footer.php', 
+    '!dev/header.php'
     ])
     .on('change', reload);
 
@@ -44,6 +50,8 @@ gulp.task('default', ['build_tasks'], function() {
   gulp.watch('dev/assets/fonts/**/*', ['fonts']);
   gulp.watch('dev/assets/img/**/*', ['images']);
   gulp.watch('dev/assets/*.{png,ico}', ['favicons']);
+  gulp.watch(['bower.json', 'dev/footer.php', 'dev/header.php'], ['wiredep']);
+  gulp.watch(['dev/**/*.php', '!dev/footer.php', '!dev/header.php'], ['php']);
 });
 
 
@@ -51,7 +59,7 @@ gulp.task('default', ['build_tasks'], function() {
    ============================= */
 
 // 'Clean' moet volledig gedaan zijn voordat aan andere taken begonnen mag worden.
-gulp.task('build_tasks', ['iconfont', 'css', 'js', 'images', 'wiredep', 'favicons',, 'ajax-loader']);
+gulp.task('build_tasks', ['iconfont', 'css', 'js', 'images', 'wiredep', 'favicons', 'php', 'ajax-loader']);
 
 gulp.task('build', ['clean'], function () {
   gulp.start('build_tasks');
@@ -184,6 +192,17 @@ gulp.task('images', function () {
 });
 
 
+/* PHP
+   ============================= */
+
+gulp.task('php', function () {
+  return gulp.src(['dev/**/*.php', '!dev/footer.php', '!dev/header.php'])
+    .pipe($.changed('./'))
+    //.pipe($.if('*.php', $.minifyHtml({conditionals: true, loose: true})))
+    .pipe(gulp.dest(''));
+});
+
+
 /* favicons
    ============================= */
 
@@ -242,20 +261,3 @@ gulp.task('clean', function(done) {
 function notify(msg) {
   $.notify().write({ message: '\nMessage: ' + msg });
 }
-
-
-/* Vaprobash
-   ============================= */
-
-gulp.task('vaprobash', function(){
-   runSequence('download-vaprobash','copy-scripts');
-});
-
-gulp.task('download-vaprobash', shell.task([
-  'curl -L http://bit.ly/vaprobash > Vagrantfile'
-], { cwd: '../../..' }));
-
-gulp.task('copy-scripts', shell.task([
-  'mv vagrant_scripts ../../..'
-]));
-

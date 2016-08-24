@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "VoltaFont";
-  src: url('../fonts/VoltaFont.eot');
-  src: url('../fonts/VoltaFont.eot?#iefix') format('eot'),
-    url('../fonts/VoltaFont.woff') format('woff'),
-    url('../fonts/VoltaFont.ttf') format('truetype'),
-    url('../fonts/VoltaFont.svg#VoltaFont') format('svg');
+  font-family: "ARC";
+  src: url('../fonts/ARC.eot');
+  src: url('../fonts/ARC.eot?#iefix') format('eot'),
+    url('../fonts/ARC.woff') format('woff'),
+    url('../fonts/ARC.ttf') format('truetype'),
+    url('../fonts/ARC.svg#ARC') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +12,7 @@
 [class^="s-"],
 [class*=" s-"]:before {
   display: inline-block;
-  font-family: "VoltaFont";
+  font-family: "ARC";
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -38,7 +38,10 @@
 
 /*  */
 
-.s-arrow-full-down:before { content: "\E001" }
-.s-arrow-full-left:before { content: "\E002" }
-.s-arrow-full-right:before { content: "\E003" }
-.s-arrow-full-up:before { content: "\E004" }
+.s-3rd-party:before { content: "\E001" }
+.s-audio-settings:before { content: "\E002" }
+.s-illumination:before { content: "\E003" }
+.s-logo:before { content: "\E004" }
+.s-menu:before { content: "\E005" }
+.s-multilangual:before { content: "\E006" }
+.s-source-control:before { content: "\E007" }

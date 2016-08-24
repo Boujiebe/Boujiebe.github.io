@@ -1,20 +1,6 @@
-// a {
-//   background: linear-gradient(to top, black, white);
-//   display: flex;
-//   border-radius: 5px;
-// }
-// ::placeholder {
-//   color: #ccc
-// }
-
-
-@import 'font';
 @import 'reset';
-@import 'mixins';
-@import 'variables-bp';
-@import 'variables-colors';
-@import 'variables-fonts';
+@import 'font';
+@import 'libraries/foundation';
+@import 'vars/*';
 @import 'base';
 @import 'layout';
-@import 'module';
-@import 'media-queries';

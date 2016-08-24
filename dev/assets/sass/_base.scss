@@ -3,22 +3,22 @@
 ---------------------------------------------------------------------------- */
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* -------------------------------------------------------------------------
  Typography
 ---------------------------------------------------------------------------- */
 html {
-  margin-top: 0;
+	margin-top: 0;
 }
 
 body {
-  
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1, h2, h3, h4 {
-   line-height: 1.5
+	line-height: 1.5
 }
 
 h1 {
@@ -47,7 +47,7 @@ ul, ol{
 ---------------------------------------------------------------------------- */
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 /* -------------------------------------------------------------------------
@@ -96,10 +96,10 @@ input[type="submit"],
 input[type="checkbox"], 
 button,
 textarea {
-    appearance: none;
-    outline: none;
-    border: none;
-    border-radius: 0;
+	appearance: none;
+	outline: none;
+	border: none;
+	border-radius: 0;
 }
 
 /* -------------------------------------------------------------------------
@@ -116,57 +116,57 @@ textarea {
   ul,
   ol,
   table {
-    color: gray;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    padding-left: 2em;
-    margin: 2em 0;
+	color: gray;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	padding-left: 2em;
+	margin: 2em 0;
 
-    @media (min-width: 45em) {
-      font-size: 1.5rem;
-    }
+	@media (min-width: 45em) {
+	  font-size: 1.5rem;
+	}
 
-    ol,
-    ul {
-      margin: .5em 0;
-    }
+	ol,
+	ul {
+	  margin: .5em 0;
+	}
   }
 
   ul {
-    list-style-type: disc;
+	list-style-type: disc;
   }
 
   ol {
-    list-style-type: decimal;
+	list-style-type: decimal;
   }
 
   blockquote {
-    padding: 2em;
-    background-color: gray;
-    margin: 2em;
-    color: white;
+	padding: 2em;
+	background-color: gray;
+	margin: 2em;
+	color: white;
   }
 
   table {
-    border-collapse: collapse;
+	border-collapse: collapse;
   }
 
   td {
-    border: 1px solid gray;
-    padding: 1em;
+	border: 1px solid gray;
+	padding: 1em;
   }
 
   h1 {
-    margin-top: 0;
-    margin-bottom: .5em;
+	margin-top: 0;
+	margin-bottom: .5em;
   }
 
   img { 
-    margin: 2em 0;
+	margin: 2em 0;
   }
 
   p {
-    margin: 1em 0;
+	margin: 1em 0;
   }
  
 }
