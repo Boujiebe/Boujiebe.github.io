@@ -1,0 +1,44 @@
+/* -------------------------------------------------------------------------
+ Key Features
+---------------------------------------------------------------------------- */
+
+#key-features {
+	text-align: center;
+	color: $white;
+	padding: 5em 0 4em;
+
+	h2 {
+		color: $green;
+		padding-left: .4em;
+		position: relative;
+		display: inline-block;
+
+		&:before {
+			content: "";
+			display: block;
+			width: 2px;
+			height: .7em;
+			background-color: $green;
+			position: absolute;
+			left: 0;
+			margin-top: .2em;
+		}
+	}
+
+	ul {
+
+		li {
+			margin: 2em auto;
+
+			i {
+				font-size: 4rem;
+				display: block;
+				padding-bottom: .5em;
+			}
+
+			span {
+
+			}
+		}
+	}
+}

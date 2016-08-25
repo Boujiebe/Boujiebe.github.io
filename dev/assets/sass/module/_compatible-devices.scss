@@ -1,0 +1,67 @@
+/* -------------------------------------------------------------------------
+ Compatibility
+---------------------------------------------------------------------------- */
+
+#compatible-devices {
+	text-align: right;
+
+	.filters {
+
+		ul {
+			text-align: center;
+			margin-top: 2em;
+
+			li {
+				margin-bottom: 2em;
+
+				img {
+					border-radius: 50%;
+					width: 60%;
+					margin: 0 auto;
+				}
+
+				i {
+					font-size: 1.2em;
+					position: relative;
+					bottom: -.2em;
+					padding: 1em .5em;
+				}
+
+				.btn {
+					font-size: 1.4rem;
+				}
+
+				ul {
+
+					li {
+						padding: 0;
+
+						img {
+							border-radius: 0;
+							width: 100%;
+						}
+
+						.btn {
+							font-size: 1.2rem;
+						}
+
+						i {
+							font-size: 1em;
+							padding: 0 .5em 1em;
+							color: $black;
+							font-weight: 700;
+						}
+
+					}
+				}
+			}
+		}
+	}
+
+	p {
+		text-align: center;
+		strong {
+			
+		}
+	}
+}

@@ -1,0 +1,21 @@
+/* -------------------------------------------------------------------------
+ Multilangual
+---------------------------------------------------------------------------- */
+
+#multilangual {
+	margin: 7em 0 0;
+	position: relative;
+
+	p {
+		line-height: 1.5;
+	}
+
+	.s-multilangual {
+		position: absolute;
+		color: $shade2;
+		font-size: 30rem;
+		z-index: -1;
+		left: -.4em;
+		top: -.1em;
+	}
+}

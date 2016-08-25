@@ -7,7 +7,6 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 .row {
-  max-width: 62.5rem;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-flex;
@@ -270,6 +269,7 @@
   padding-right: 0.9375rem; }
 
 @media screen and (min-width: 40em) {
+
   .medium-1 {
     -webkit-flex: 0 0 8.33333%;
         -ms-flex: 0 0 8.33333%;

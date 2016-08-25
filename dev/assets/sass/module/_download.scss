@@ -1,0 +1,25 @@
+/* -------------------------------------------------------------------------
+ Download
+---------------------------------------------------------------------------- */
+
+#download {
+	text-align: center;
+	margin:4em 0;
+
+	h2 {
+		font-weight: 900;
+		text-transform: uppercase;
+		font-size: 2.3rem;
+
+		small {
+			display: block;
+			font-weight: 100;
+			text-transform: none;
+		}
+	}
+
+	a {
+		display: block;
+		margin-top: 1em;
+	}
+}

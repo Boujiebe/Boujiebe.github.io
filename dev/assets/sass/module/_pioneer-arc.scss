@@ -2,3 +2,35 @@
  Pioneer ARC
 ---------------------------------------------------------------------------- */
 
+#pioneer-arc {
+	background: url(../img/bg/pioneer-arc-intro.jpg) center center no-repeat;
+	background-size: cover;
+	color: $white;
+	position: relative;
+	margin-top: -8rem;
+	padding-top: 8rem;
+	z-index: 0;
+
+	article {
+
+		p {
+			margin: 12em 0 2em;
+			line-height: 1.2;
+		}
+
+		footer {
+			clear: both;
+		}
+	}
+
+	footer.row {
+		margin: 1em 0 2em;
+
+		a {
+
+			img {
+
+			}
+		}
+	}
+}

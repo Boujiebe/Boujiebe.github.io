@@ -21,6 +21,7 @@ $( document ).ready(function() {
         }
       });
     });
+
 });
 
 })(); // END OF USE STRICT FUNCTION

@@ -1,0 +1,27 @@
+.circle-badge {
+	display: block;
+	background-color: $green;
+	border-radius: 50%;
+	width: 7em;
+	height: 7em;
+	color: $white;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 1em;
+	font-size: 1.4rem;
+
+	&:after {
+		content: "";
+		display: block;
+		border-radius: 50%;
+		width: 7.5em;
+		height: 7.5em;
+		position: absolute;
+		top: -.3em;
+		left: -.3em;
+		border: .1em solid $green;
+		z-index: -1;
+	}
+}

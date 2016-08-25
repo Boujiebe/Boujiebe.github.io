@@ -1,0 +1,25 @@
+/* -------------------------------------------------------------------------
+ Navigation
+---------------------------------------------------------------------------- */
+
+#mobile-nav {
+	background-color: $opacityBlack;
+	overflow: hidden;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	position: relative;
+	z-index: 1;
+
+	.btn-green {
+		margin: .5em 0;
+	}
+
+	.s-menu {
+		color: $white;
+		font-size: 4.8rem;
+	}
+}
+
+#site-nav {
+	display: none;
+}
