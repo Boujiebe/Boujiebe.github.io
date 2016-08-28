@@ -9,17 +9,190 @@
 	padding-bottom: 1em;
 	position: relative;
 	z-index: 1;
+	cursor: pointer;
+
+	position: fixed;
+	width: 100%;
+	top: 0;
+	transition: all .5s;
+
+	&.sticky {
+		height: 65px;
+
+		.btn-green {
+			font-size: 1.4rem;
+			margin: 0;
+		}
+
+		.s-menu {
+			font-size: 3.2rem;
+		}
+	}
+
+	@include large {
+		display: none;
+	}
 
 	.btn-green {
 		margin: .5em 0;
+		float: right;
+		transition: all .5s;
 	}
 
 	.s-menu {
 		color: $white;
 		font-size: 4.8rem;
+		transition: all .5s;
 	}
 }
 
 #site-nav {
 	display: none;
+
+	&.active {
+		display: block;
+		position: fixed;
+		width: 100%;
+		top: 83px;
+		background-color: $black;
+
+		@include large {
+			top: 0;
+			background-color: $opacityBlack;
+
+			.sticky & {
+				top: 0;
+			}
+		}
+
+		.sticky & {
+			top: 53px;
+		}
+
+		ul {
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			padding: 2em 0 3em;
+
+			@include large {
+				flex-direction: row;
+				justify-content: space-around;
+				padding: 0;
+			}
+
+			li {
+				display: block;
+				padding: 1.5em 0;
+				font-size: 1.8rem;
+
+				@include large {
+					margin: 1em 0;
+					padding: .5em 0;
+					flex: initial;
+					font-size: 1.4rem;
+				}
+
+				&.active a {
+					color: $green;
+
+					&:after {
+						opacity: 1;
+					}
+				}
+
+				a {					
+					color: $white;
+					transition: color .7s;
+
+					&:after {
+						content: "";
+						text-align: center;
+					    height: 20px;
+					    background: url(../img/active-page.png) no-repeat center center transparent;
+					    display: block;
+					    opacity: 0;
+						transition: opacity .5s;
+					}
+				}
+			}
+		}
+	}
+
+	@include large {
+		display: block;
+		background-color: $opacityBlack;
+		overflow: hidden;
+		position: relative;
+
+		position: fixed;
+		width: 100%;
+		height: 66px;
+		top: 0;
+
+		&.sticky {
+			line-height: 66px;
+			height: 66px;
+		}
+
+		ul {
+			justify-content: space-around;
+
+			li {
+				margin: 1em 0;
+				padding: .5em 0;
+				flex: initial;
+				font-size: 1.4rem;
+
+				&.active a {
+					color: $green;
+
+					&:after {
+						opacity: 1;
+					}
+				}
+
+				a {					
+					color: $white;
+					transition: color .7s;
+
+					&:after {
+						content: "";
+						text-align: center;
+					    height: 20px;
+					    background: url(../img/active-page.png) no-repeat center center transparent;
+					    display: block;
+					    opacity: 0;
+						transition: opacity .5s;
+					}
+				}
+
+				&:last-child {
+					padding: 0;
+
+					a {
+						display: inline-block;
+						font-size: 1.6rem;
+						text-transform: uppercase;
+						padding: .5em 2em;
+						border-radius: .4em;
+						background-color: $green;
+						color: $shade1;
+						font-weight: 900;
+						margin: 0;
+						float: right;
+
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+
+		.btn-green {
+			
+		}
+
+	}
 }

@@ -1,4 +1,28 @@
-$bp1: 512px;
-$bp2: 840px;
-$bp3: 1020px;
-$bp4: 1500px;
+$small-width: 600px;
+$smallMedium-width: 800px;
+$medium-width: 1000px;
+$large-width: 1200px;
+
+@mixin small {
+	@media (min-width: #{$small-width}) {
+		@content;
+	}
+}
+
+@mixin smallMedium {
+	@media (min-width: #{$smallMedium-width}) {
+		@content;
+	}
+}
+
+@mixin medium {
+	@media (min-width: #{$medium-width}) {
+		@content;
+	}
+}
+
+@mixin large {
+	@media (min-width: #{$large-width}) {
+		@content;
+	}
+}

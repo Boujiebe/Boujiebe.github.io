@@ -3,19 +3,103 @@
 ---------------------------------------------------------------------------- */
 
 #pioneer-arc {
-	background: url(../img/bg/pioneer-arc-intro.jpg) center center no-repeat;
-	background-size: cover;
 	color: $white;
 	position: relative;
-	margin-top: -8rem;
-	padding-top: 8rem;
-	z-index: 0;
+	margin-top: -19.8rem;
+	z-index: 1;
+	transform: skewY(-10deg) !important;
+	border-top: 3px solid #ABD037;
+    box-shadow: 0px 0px 18px #ABD037;
+    border-bottom: 3px solid #ABD037;
+    overflow: hidden;
+
+    @include small {
+    	margin-top: -21.8rem;
+    }
+
+     @include smallMedium {
+    	margin-top: -23.8rem;
+    }
+
+    @include medium {
+    	margin-top: -25rem;
+    }
+
+    @include large {
+    	margin-top: -32rem;
+    }
+
+
+	&:before {
+		content: "";
+		background: url(../img/bg/pioneer-arc-intro.jpg) left 22% top -6em no-repeat;
+		background-size: 860px;
+		position: absolute;
+	    width: 100%;
+	    height: 110%;
+	    transform: skewY(10deg)!important;
+	    z-index: 0;
+
+	    @include small {
+	    	background-position: -110px -90px;
+	    	background-size: 1000px;
+	    }
+
+	    @include smallMedium {
+	    	background-position: left 53% bottom 52%;
+	    	background-size: 130%;
+	    }
+
+	    @include medium {
+	    	background-position: left 2% bottom 22%;
+	    	background-size: 130%;
+	    	height: 115%;
+	    }
+
+	    @include large {
+	    	background-position: center bottom 16%;
+	    	background-size: 2660px;
+	    	height: 140%;
+	    	background-image: url(../img/bg/pioneer-arc-intro-large.jpg);
+	    }
+	}
 
 	article {
+		margin: 9em 0 -2em;
+		position: relative;
+		transform: skewY(10deg)!important;
+
+
+		@include small {
+			margin: 10em 0;
+			width: 90%;
+		}
+
+		@include smallMedium {
+			margin: 14em 0 -1em;
+			width: 80%;
+			float: right;
+		}
+
+		@include medium {
+			margin: 14em 10% 0em 0;
+			width: 50%;
+		}
+
+		@include large {
+			margin: 24em 10% 0em 0;
+			width: 44%;
+		}
 
 		p {
-			margin: 12em 0 2em;
+			margin: 2em 0 13em;
 			line-height: 1.2;
+			height: 95px;
+
+			@include small {
+				margin: 2em 0;
+				height: auto;
+			}
 		}
 
 		footer {
@@ -24,9 +108,46 @@
 	}
 
 	footer.row {
-		margin: 1em 0 2em;
+		margin: 3em 0;
+		clear: both;
+		justify-content: space-around;
+		transform: skewY(10deg)!important;
+
+		@include small {
+			margin: -7em 0 13em 8em;
+			width: 26rem;
+			float: left;
+		}
+
+		@include smallMedium {
+			margin: 2em 30% 17em 12em;
+			width: 50%;
+			float: right;			
+			justify-content: space-between;
+		}
+
+		@include medium {
+			margin: 15em 28% 5em 0;
+			width: 38%;
+		}
+
+		@include large {
+			margin: 12em 35.5% 6em 0;
+			width: 36.5%;
+		}
 
 		a {
+			display: block;
+			width: 35%;
+			float: right;
+
+			@include small {
+				width: 45%;
+			}
+
+			@include large {
+				width: 48%;
+			}
 
 			img {
 

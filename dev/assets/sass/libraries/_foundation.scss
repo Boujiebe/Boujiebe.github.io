@@ -6,6 +6,24 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+@media (min-width: $small-width) {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $smallMedium-width) {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $medium-width) {
+  * {
+    box-sizing: border-box;
+  }
+}
+
 .row {
   margin-left: auto;
   margin-right: auto;
@@ -268,7 +286,7 @@
   padding-left: 0.9375rem;
   padding-right: 0.9375rem; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: $small-width) {
 
   .medium-1 {
     -webkit-flex: 0 0 8.33333%;
@@ -451,7 +469,7 @@
               flex: 0 0 12.5%;
       max-width: 12.5%; } }
 
-@media screen and (min-width: 40em) and (min-width: 40em) {
+@media screen and (min-width: $small-width) and (min-width: $small-width) {
   .medium-expand {
     -webkit-flex: 1 1 0px;
         -ms-flex: 1 1 0px;
@@ -461,13 +479,13 @@
   -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: $small-width) {
     .row.medium-unstack > .column, .row.medium-unstack > .columns {
       -webkit-flex: 1 1 0px;
           -ms-flex: 1 1 0px;
               flex: 1 1 0px; } }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: $small-width) {
   .medium-collapse > .column, .medium-collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
@@ -475,7 +493,7 @@
     padding-left: 0.9375rem;
     padding-right: 0.9375rem; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: $medium-width) {
   .large-1 {
     -webkit-flex: 0 0 8.33333%;
         -ms-flex: 0 0 8.33333%;
@@ -657,7 +675,7 @@
               flex: 0 0 12.5%;
       max-width: 12.5%; } }
 
-@media screen and (min-width: 64em) and (min-width: 64em) {
+@media screen and (min-width: $medium-width) and (min-width: $medium-width) {
   .large-expand {
     -webkit-flex: 1 1 0px;
         -ms-flex: 1 1 0px;
@@ -667,13 +685,13 @@
   -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: $medium-width) {
     .row.large-unstack > .column, .row.large-unstack > .columns {
       -webkit-flex: 1 1 0px;
           -ms-flex: 1 1 0px;
               flex: 1 1 0px; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: $medium-width) {
   .large-collapse > .column, .large-collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
@@ -797,7 +815,7 @@
       -ms-flex-order: 6;
           order: 6; }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: $small-width) {
   .medium-order-1 {
     -webkit-order: 1;
         -ms-flex-order: 1;
@@ -823,7 +841,7 @@
         -ms-flex-order: 6;
             order: 6; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: $medium-width) {
   .large-order-1 {
     -webkit-order: 1;
         -ms-flex-order: 1;

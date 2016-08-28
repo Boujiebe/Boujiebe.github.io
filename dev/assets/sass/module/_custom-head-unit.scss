@@ -5,6 +5,10 @@
 #custom-head-unit {
 	text-align: right;
 
+	@include small {
+		margin: 8em auto;
+	}
+
 	h2 {
 		color: $green;
 		padding-right: .4em;
@@ -22,25 +26,46 @@
 		}
 	}
 
-	.circle-badge {
-		position: absolute;
-		right: 7rem;
+	.circle-badge {		
 		display: none;
+
+		@include small {
+			display: block;
+			position: absolute;
+			left: 11rem;
+			top: -10rem;
+		}
 	}
 
 	#illuminaion-control {
 		position: relative;
+		margin: 0 auto;
+		max-width: 45rem;
+
+		@include small {
+			width: 100%;
+			max-width: 69rem;
+		}
 
 		img:nth-of-type(1) {
 			width: 22rem;
 			position: relative;
 			z-index: -2;
+
+			@include small {
+				float: left;
+				margin-top: -5rem;
+			}
 		}
 
 		.connection {
 			margin: 2rem auto 3rem;
 			width: 5rem;
 			position: relative;
+
+			@include small {
+				margin: 11rem auto 0;
+			}
 			
 			.connection-one {
 				height: 8rem;
@@ -50,6 +75,13 @@
 				position: absolute;
 				left: -4rem;
 				top: -5.5rem;
+				
+				@include small {
+					border-left: 0;
+					height: 3rem;
+					width: 9rem;
+					left: -10rem;
+				}
 			}
 
 			img {
@@ -64,13 +96,25 @@
 				position: absolute;
 				right: -4rem;
 				bottom: -5.5rem;
+
+				@include small {
+					height: 5rem;
+					width: 8rem;
+					right: -9rem;
+					bottom: -2.5rem;
+				}
 			}
 		}
 
 			
 
-		img:nth-of-type(3) {
+		img:nth-of-type(2) {
 
+			@include small {
+				float: right;
+				width: 34rem;
+				margin-top: 5rem;
+			}
 		}
 		
 	}

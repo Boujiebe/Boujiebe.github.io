@@ -5,13 +5,64 @@
 #smartphone-content {
 	text-align: right;
 
+	h2 {
+		padding-right: .4em;
+		position: relative;
+		display: inline-block;
+
+		&:before {
+			content: "";
+			display: block;
+			width: 2px;
+			height: 1.7em;
+			background-color: $green;
+			position: absolute;
+			right: 0;
+			margin-top: .2em;
+		}
+	}
+
 	#advanced-remote {
 		padding-bottom: 32rem;
 		position: relative;
 
+		@include small {
+			padding-bottom: 10rem;
+		}
+
+		@include smallMedium {
+			padding-bottom: 25rem;
+		}
+
 		aside {
 			position: absolute;
 			top: 20rem;
+
+			@include small {
+				top: 0;
+
+				img {
+					width: 100%;
+					max-width: 370px;
+				}
+			}
+
+			@include smallMedium {
+				top: -18rem;
+				z-index: 5;
+
+				img {
+					max-width: 100%;
+				}
+			}
+
+			@include medium {
+				top: -20rem;
+
+				img {
+					max-width: 500px;
+				}
+			}
 		}
 	}
 
@@ -19,6 +70,14 @@
 		display: block;
 		margin: 2em 0;
 		position: relative;
+
+		@include small {
+			text-align: left;
+
+			main {
+				margin-top: -5rem;
+			}
+		}
 
 		&:before {
 			content: "";
@@ -31,6 +90,12 @@
 			top: -20px;
 			top: -8rem;
 			left: -20%;
+
+			@include small {
+				left: 35%;
+				width: 360px;
+				height: 260px;
+			}
 		}
 
 		aside {

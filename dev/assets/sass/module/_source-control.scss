@@ -9,6 +9,14 @@
 	margin-bottom: 5em;
 	text-align: right;
 
+	@include small {
+		padding: 3em 0 14em;
+	}
+
+	@include smallMedium {
+		margin-bottom: 15em;
+	}
+
 	h2 {
 		color: $green;
 		padding-right: .4em;
@@ -18,7 +26,8 @@
 			content: "";
 			display: block;
 			width: 2px;
-			height: 2em;
+			top: .2em;
+			height: 1.8em;
 			background-color: $green;
 			position: absolute;
 			right: 0;
@@ -27,6 +36,26 @@
 
 	aside {
 		position: absolute;
-		bottom: -5rem;
+		bottom: -6rem;
+
+		@include smallMedium {
+			bottom: -17rem;
+		}
+
+		img {
+			max-width: 240px;
+
+			@include small {
+				max-width: 310px;
+			}
+
+			@include smallMedium {
+				max-width: 390px;
+			}
+
+			@include medium {
+				max-width: 450px;
+			}
+		}
 	}
 }

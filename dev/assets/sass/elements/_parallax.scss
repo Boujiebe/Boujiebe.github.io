@@ -1,6 +1,10 @@
 .parallax-window {
     min-height: 400px;
     background: transparent;
+
+    @include medium {
+    	min-height: 600px;
+    }
 }
 
 .parallax-mirror {

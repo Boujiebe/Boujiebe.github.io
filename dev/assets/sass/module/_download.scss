@@ -4,12 +4,16 @@
 
 #download {
 	text-align: center;
-	margin:4em 0;
 
 	h2 {
 		font-weight: 900;
 		text-transform: uppercase;
 		font-size: 2.3rem;
+		margin: 2em 0;
+
+		@include small {
+			font-size: 3.2rem;
+		}
 
 		small {
 			display: block;
@@ -18,8 +22,24 @@
 		}
 	}
 
-	a {
+	main {
 		display: block;
-		margin-top: 1em;
+		width: 100%;
+	}
+
+	a {
+		display: inline-block;
+		margin: 1em auto;
+		width: 45%;
+
+		@include small {
+			display: inline-block;
+			width: 30%;
+		}
+
+		img {
+			margin: 0 auto;
+			max-width: 100%;
+		}
 	}
 }

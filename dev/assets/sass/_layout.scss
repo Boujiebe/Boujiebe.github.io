@@ -1,8 +1,17 @@
 /* -------------------------------------------------------------------------
  General
 ---------------------------------------------------------------------------- */
+body {
+	min-width: 320px;
+}
+
 .page-section {
-	margin: 2em 0;
+    margin: 2em auto;
+}
+
+
+#site-main {
+    margin-top: 139px; // Sticky  header height
 }
 
 
@@ -14,7 +23,24 @@
 .column {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+
+    @include small {
+    	padding-left: 4.5rem;
+    	padding-right: 4.5rem;
+    }
+
+    @include medium {
+    	padding-left: 8.5rem;
+    	padding-right: 8.5rem;
+    }
 }
 
+
+.row {
+
+	@include medium {
+		max-width: $large-width;
+	}
+}
 
 

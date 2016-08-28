@@ -8,6 +8,13 @@
 	position: relative;
 	margin-bottom: 5em;
 
+	article {
+
+		@include small {
+			margin-top: 3em;
+		}
+	}
+
 	h2 {
 		color: $green;
 		padding-left: .4em;
@@ -26,6 +33,30 @@
 
 	aside {
 		position: absolute;
-		bottom: -5rem;
+		bottom: -8rem;
+
+		@include small {
+			bottom: -1rem;
+		}
+
+		@include smallMedium {
+			bottom: -11rem;
+		}
+
+		img {
+			max-width: 210px;
+
+			@include small {
+				max-width: 100%;
+			}
+
+			@include medium {
+				max-width: 430px;
+			}
+
+			@include large {
+				max-width: 430px;
+			}
+		}
 	}
 }
