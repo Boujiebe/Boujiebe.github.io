@@ -2,7 +2,7 @@
  Source control
 ---------------------------------------------------------------------------- */
 
-#source-control {
+#bk2210-source-control {
 	color: $white;
 	padding: 3em 0 18em;
 	position: relative;
@@ -36,10 +36,10 @@
 
 	aside {
 		position: absolute;
-		bottom: -6rem;
+		bottom: -60px;
 
 		@include smallMedium {
-			bottom: -17rem;
+			bottom: -170px;
 		}
 
 		img {

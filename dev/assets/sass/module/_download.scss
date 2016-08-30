@@ -2,17 +2,17 @@
  Download
 ---------------------------------------------------------------------------- */
 
-#download {
+#bk2210-download {
 	text-align: center;
 
 	h2 {
 		font-weight: 900;
 		text-transform: uppercase;
-		font-size: 2.3rem;
+		font-size: 23px;
 		margin: 2em 0;
 
 		@include small {
-			font-size: 3.2rem;
+			font-size: 32px;
 		}
 
 		small {

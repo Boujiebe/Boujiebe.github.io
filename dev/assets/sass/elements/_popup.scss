@@ -1,6 +1,6 @@
-#compatible-devices #filters ul li {
+#bk2210-compatible-devices #bk2210-filters ul li {
 
-	ul.pop-up {
+	ul.bk2210-pop-up {
 		position: absolute;
 		top: 100px;
 		width: 100%;
@@ -41,8 +41,8 @@
 					padding: 1em .5em;
 				}
 
-				.btn {
-					font-size: 1.4rem;
+				.bk2210-btn {
+					font-size: 14px;
 				}
 			}
 
@@ -51,8 +51,8 @@
 				width: 100%;
 			}
 
-			.btn {
-				font-size: 1.2rem;
+			.bk2210-btn {
+				font-size: 12px;
 			}
 
 			i {
@@ -65,7 +65,7 @@
 		}
 	}
 
-	.pop-up-overlay {
+	.bk2210-pop-up-overlay {
 		background: $opacityBlack;
 		position: fixed;
 		top: 0;
@@ -75,7 +75,7 @@
 		z-index: 98;
 	}
 
-	.close {
+	.bk2210-close {
 		position:absolute;
 		top: 15px;
 		right: 15px;

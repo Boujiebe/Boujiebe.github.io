@@ -2,7 +2,7 @@
  Compatibility
 ---------------------------------------------------------------------------- */
 
-#compatible-devices {
+#bk2210-compatible-devices {
 	text-align: right;
 
 	h2 {
@@ -22,14 +22,14 @@
 		}
 	}
 
-	.device {
+	.bk2210-device {
 
 		img {
 			width: 100%;
 		}
 	}
 
-	#filters {
+	#bk2210-filters {
 		position: relative;
 
 		@include medium {
@@ -64,8 +64,8 @@
 					padding: 1em .5em;
 				}
 
-				.btn {
-					font-size: 1.4rem;
+				.bk2210-btn {
+					font-size: 14px;
 				}
 
 				ul {
@@ -82,8 +82,8 @@
 							width: 100%;
 						}
 
-						.btn {
-							font-size: 1.2rem;
+						.bk2210-btn {
+							font-size: 12px;
 							display: block;
 						}
 

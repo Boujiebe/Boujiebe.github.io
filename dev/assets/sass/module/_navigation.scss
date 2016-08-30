@@ -2,7 +2,7 @@
  Navigation
 ---------------------------------------------------------------------------- */
 
-#mobile-nav {
+#bk2210-mobile-nav {
 	background-color: $opacityBlack;
 	overflow: hidden;
 	padding-top: 1em;
@@ -16,16 +16,16 @@
 	top: 0;
 	transition: all .5s;
 
-	&.sticky {
+	&.bk2210-sticky {
 		height: 65px;
 
-		.btn-green {
-			font-size: 1.4rem;
+		.bk2210-btn-green {
+			font-size: 14px;
 			margin: 0;
 		}
 
 		.s-menu {
-			font-size: 3.2rem;
+			font-size: 32px;
 		}
 	}
 
@@ -33,7 +33,7 @@
 		display: none;
 	}
 
-	.btn-green {
+	.bk2210-btn-green {
 		margin: .5em 0;
 		float: right;
 		transition: all .5s;
@@ -41,15 +41,15 @@
 
 	.s-menu {
 		color: $white;
-		font-size: 4.8rem;
+		font-size: 48px;
 		transition: all .5s;
 	}
 }
 
-#site-nav {
+#bk2210-site-nav {
 	display: none;
 
-	&.active {
+	&.bk2210-active {
 		display: block;
 		position: fixed;
 		width: 100%;
@@ -60,12 +60,12 @@
 			top: 0;
 			background-color: $opacityBlack;
 
-			.sticky & {
+			.bk2210-sticky & {
 				top: 0;
 			}
 		}
 
-		.sticky & {
+		.bk2210-sticky & {
 			top: 53px;
 		}
 
@@ -84,16 +84,16 @@
 			li {
 				display: block;
 				padding: 1.5em 0;
-				font-size: 1.8rem;
+				font-size: 18px;
 
 				@include large {
 					margin: 1em 0;
 					padding: .5em 0;
 					flex: initial;
-					font-size: 1.4rem;
+					font-size: 14px;
 				}
 
-				&.active a {
+				&.bk2210-active a {
 					color: $green;
 
 					&:after {
@@ -130,7 +130,7 @@
 		height: 66px;
 		top: 0;
 
-		&.sticky {
+		&.bk2210-sticky {
 			line-height: 66px;
 			height: 66px;
 		}
@@ -142,9 +142,9 @@
 				margin: 1em 0;
 				padding: .5em 0;
 				flex: initial;
-				font-size: 1.4rem;
+				font-size: 14px;
 
-				&.active a {
+				&.bk2210-active a {
 					color: $green;
 
 					&:after {
@@ -172,7 +172,7 @@
 
 					a {
 						display: inline-block;
-						font-size: 1.6rem;
+						font-size: 16px;
 						text-transform: uppercase;
 						padding: .5em 2em;
 						border-radius: .4em;
@@ -188,10 +188,6 @@
 					}
 				}
 			}
-		}
-
-		.btn-green {
-			
 		}
 
 	}

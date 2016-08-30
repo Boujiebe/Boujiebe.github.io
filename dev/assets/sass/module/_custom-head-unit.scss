@@ -2,7 +2,7 @@
  Customise illumination
 ---------------------------------------------------------------------------- */
 
-#custom-head-unit {
+#bk2210-custom-head-unit {
 	text-align: right;
 
 	@include small {
@@ -26,61 +26,61 @@
 		}
 	}
 
-	.circle-badge {		
+	.bk2210-circle-badge {		
 		display: none;
 
 		@include small {
 			display: block;
 			position: absolute;
-			left: 11rem;
-			top: -10rem;
+			left: 110px;
+			top: -100px;
 		}
 	}
 
-	#illuminaion-control {
+	#bk2210-illuminaion-control {
 		position: relative;
 		margin: 0 auto;
-		max-width: 45rem;
+		max-width: 450px;
 
 		@include small {
 			width: 100%;
-			max-width: 69rem;
+			max-width: 690px;
 		}
 
 		img:nth-of-type(1) {
-			width: 22rem;
+			width: 220px;
 			position: relative;
 			z-index: -2;
 
 			@include small {
 				float: left;
-				margin-top: -5rem;
+				margin-top: -50px;
 			}
 		}
 
-		.connection {
-			margin: 2rem auto 3rem;
-			width: 5rem;
+		.bk2210-connection {
+			margin: 20px auto 30px;
+			width: 50px;
 			position: relative;
 
 			@include small {
-				margin: 11rem auto 0;
+				margin: 110px auto 0;
 			}
 			
-			.connection-one {
-				height: 8rem;
-				width: 3rem;
+			.bk2210-connection-one {
+				height: 80px;
+				width: 30px;
 				border-left: 2px solid $green;
 				border-bottom: 2px solid $green;
 				position: absolute;
-				left: -4rem;
-				top: -5.5rem;
+				left: -40px;
+				top: -55px;
 				
 				@include small {
 					border-left: 0;
-					height: 3rem;
-					width: 9rem;
-					left: -10rem;
+					height: 30px;
+					width: 90px;
+					left: -100px;
 				}
 			}
 
@@ -88,20 +88,20 @@
 
 			}
 
-			.connection-two {
-				height: 8rem;
-				width: 3rem;
+			.bk2210-connection-two {
+				height: 80px;
+				width: 30px;
 				border-top: 2px solid $green;
 				border-right: 2px solid $green;
 				position: absolute;
-				right: -4rem;
-				bottom: -5.5rem;
+				right: -40px;
+				bottom: -55px;
 
 				@include small {
-					height: 5rem;
-					width: 8rem;
-					right: -9rem;
-					bottom: -2.5rem;
+					height: 50px;
+					width: 80px;
+					right: -90px;
+					bottom: -25px;
 				}
 			}
 		}
@@ -112,8 +112,8 @@
 
 			@include small {
 				float: right;
-				width: 34rem;
-				margin-top: 5rem;
+				width: 340px;
+				margin-top: 50px;
 			}
 		}
 		

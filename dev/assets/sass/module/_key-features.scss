@@ -2,7 +2,7 @@
  Key Features
 ---------------------------------------------------------------------------- */
 
-#key-features {
+#bk2210-key-features {
 	text-align: center;
 	color: $white;
 	padding: 5em 0 4em;
@@ -40,12 +40,12 @@
 			}
 
 			i {
-				font-size: 4rem;
+				font-size: 40px;
 				display: block;
 				padding-bottom: .5em;
 
 				@include medium {
-					font-size: 7rem;
+					font-size: 70px;
 				}
 			}
 
@@ -55,7 +55,7 @@
 
 				@include medium {
 					max-width: 100%;
-					height: 9.7rem;
+					height: 97px;
 				}
 			}
 

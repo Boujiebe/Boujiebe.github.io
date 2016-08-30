@@ -2,10 +2,10 @@
  Pioneer ARC
 ---------------------------------------------------------------------------- */
 
-#pioneer-arc {
+#bk2210-pioneer-arc {
 	color: $white;
 	position: relative;
-	margin-top: -19.8rem;
+	margin-top: -198px;
 	z-index: 1;
 	transform: skewY(-10deg) !important;
 	border-top: 3px solid #ABD037;
@@ -14,19 +14,19 @@
     overflow: hidden;
 
     @include small {
-    	margin-top: -21.8rem;
+    	margin-top: -218px;
     }
 
      @include smallMedium {
-    	margin-top: -23.8rem;
+    	margin-top: -238px;
     }
 
     @include medium {
-    	margin-top: -25rem;
+    	margin-top: -250px;
     }
 
     @include large {
-    	margin-top: -32rem;
+    	margin-top: -320px;
     }
 
 
@@ -107,7 +107,7 @@
 		}
 	}
 
-	footer.row {
+	footer.bk2210-row {
 		margin: 3em 0;
 		clear: both;
 		justify-content: space-around;
@@ -115,7 +115,7 @@
 
 		@include small {
 			margin: -7em 0 13em 8em;
-			width: 26rem;
+			width: 260px;
 			float: left;
 		}
 

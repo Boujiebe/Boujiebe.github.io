@@ -1,17 +1,17 @@
-.btn {
+.bk2210-btn {
 	display: inline-block;
-	font-size: 1.7rem;
+	font-size: 17px;
 	font-weight: 500;
 	text-transform: uppercase;
 	background-color: $shade1;
-	color: $white;
+	color: $white !important;
 	padding: .5em 2em;
 	border-radius: .4em;
 	cursor: pointer;
 
-	&.btn-green {
+	&.bk2210-btn-green {
 		background-color: $green;
-		color: $shade1;
+		color: $shade1 !important;
 		font-weight: 900;
 	}
 }

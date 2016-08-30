@@ -1,16 +1,16 @@
 /* -------------------------------------------------------------------------
  General
 ---------------------------------------------------------------------------- */
-body {
+.bk2210-wrapper {
 	min-width: 320px;
 }
 
-.page-section {
+.bk2210-page-section {
     margin: 2em auto;
 }
 
 
-#site-main {
+#bk2210-site-main {
     margin-top: 139px; // Sticky  header height
 }
 
@@ -20,7 +20,7 @@ body {
  Grid
 ---------------------------------------------------------------------------- */
 
-.column {
+.bk2210-column {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 
@@ -36,7 +36,7 @@ body {
 }
 
 
-.row {
+.bk2210-row {
 
 	@include medium {
 		max-width: $large-width;

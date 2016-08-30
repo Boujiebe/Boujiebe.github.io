@@ -4,8 +4,8 @@
 
 $( document ).ready(function() {
 
-  $("#mobile-nav .s-menu, #site-nav li a").click(function(){
-    $("#site-nav").toggleClass("active");
+  $("#bk2210-mobile-nav .s-menu, #bk2210-site-nav li a").click(function(){
+    $("#bk2210-site-nav").toggleClass("bk2210-active");
   });
 
 
@@ -30,15 +30,15 @@ $( document ).ready(function() {
 
     $(window).scroll(function() {
       if ($(this).scrollTop() > 1){  
-        $('#site-header, #mobile-nav').addClass("sticky");
+        $('#bk2210-site-header, #bk2210-mobile-nav').addClass("bk2210-sticky");
       }
       else{
-        $('#site-header, #mobile-nav').removeClass("sticky");
+        $('#bk2210-site-header, #bk2210-mobile-nav').removeClass("bk2210-sticky");
       }
     });
 
     // Cache selectors
-    var topMenu = $("#site-nav"),
+    var topMenu = $("#bk2210-site-nav"),
         topMenuHeight = topMenu.outerHeight()+15,
         // All list items
         menuItems = topMenu.find("a"),
@@ -70,22 +70,22 @@ $( document ).ready(function() {
     
     // headunit popup
 
-    $(".pop-up, .pop-up-overlay").hide();
+    $(".bk2210-pop-up, .bk2210-pop-up-overlay").hide();
 
-    $(".view-more-source").click(function(){
-        $(".pop-up-source, .pop-up-overlay").show();
+    $(".bk2210-view-more-source").click(function(){
+        $(".bk2210-pop-up-source, .bk2210-pop-up-overlay").show();
     });
 
-    $(".view-more-audio").click(function(){
-        $(".pop-up-audio, .pop-up-overlay").show();
+    $(".bk2210-view-more-audio").click(function(){
+        $(".bk2210-pop-up-audio, .bk2210-pop-up-overlay").show();
     });
 
-    $(".view-more-illumination").click(function(){
-        $(".pop-up-illumination, .pop-up-overlay").show();
+    $(".bk2210-view-more-illumination").click(function(){
+        $(".bk2210-pop-up-illumination, .bk2210-pop-up-overlay").show();
     });
 
-    $(".pop-up-overlay, .close").click(function(){
-        $(".pop-up-audio, .pop-up-illumination, .pop-up-source, .pop-up-overlay").hide();
+    $(".bk2210-pop-up-overlay, .bk2210-close").click(function(){
+        $(".bk2210-pop-up-audio, .bk2210-pop-up-illumination, .bk2210-pop-up-source, .bk2210-pop-up-overlay").hide();
     });
 
 });
