@@ -63,8 +63,8 @@ $( document ).ready(function() {
        var id = cur && cur.length ? cur[0].id : "";
        // Set/remove active class
        menuItems
-         .parent().removeClass("active")
-         .end().filter("[href='#"+id+"']").parent().addClass("active");
+         .parent().removeClass("bk2210-active")
+         .end().filter("[href='#"+id+"']").parent().addClass("bk2210-active");
     });​
 
     
