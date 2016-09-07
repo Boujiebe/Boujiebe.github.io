@@ -41,6 +41,7 @@
 			margin-top: 2em;
 
 			li {
+				margin: 0 auto;
 				margin-bottom: 2em;
 
 				@include small {
@@ -71,7 +72,6 @@
 				ul {
 
 					li {
-						padding: 0;
 
 						@include small {
 							padding: 0 .5em;

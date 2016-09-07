@@ -16,6 +16,7 @@
 		padding-left: .4em;
 		position: relative;
 		display: inline-block;
+		text-shadow: 0 0 18px #abd037;
 
 		&:before {
 			content: "";
@@ -32,7 +33,9 @@
 	ul {
 
 		li {
-			margin: 2em auto;
+			margin: 2em auto !important;
+			color: $white;
+			padding: 0 !important;
 
 			@include medium {
 				padding-left: 4.5em;
@@ -61,6 +64,7 @@
 
 			span {
 				display: block;
+				font-weight: 100;
 			}
 		}
 	}

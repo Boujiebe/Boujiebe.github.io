@@ -21,17 +21,17 @@
 ---------------------------------------------------------------------------- */
 
 .bk2210-column {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
 
     @include small {
-    	padding-left: 4.5rem;
-    	padding-right: 4.5rem;
+    	padding-left: 45px;
+    	padding-right: 45px;
     }
 
     @include medium {
-    	padding-left: 8.5rem;
-    	padding-right: 8.5rem;
+    	padding-left: 85px;
+    	padding-right: 85px;
     }
 }
 

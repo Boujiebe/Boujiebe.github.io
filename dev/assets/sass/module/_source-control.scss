@@ -21,6 +21,7 @@
 		color: $green;
 		padding-right: .4em;
 		position: relative;
+		text-shadow: 0 0 18px #abd037;
 
 		&:before {
 			content: "";
@@ -34,9 +35,14 @@
 		}
 	}
 
+	p {
+		 font-weight: 100;
+	}
+
 	aside {
 		position: absolute;
 		bottom: -60px;
+		left: 0;
 
 		@include smallMedium {
 			bottom: -170px;

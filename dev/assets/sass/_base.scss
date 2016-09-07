@@ -16,19 +16,26 @@
 
 .bk2210-wrapper {
 	font-family: $SSP;
-	font-size: 16px;
-	font-weight: 200;
+	font-size: 16px !important;
+	line-height: 1.2 !important;
+	font-weight: 400;
 	color: $shade1;
 }
 
 h1.bk2210-title, h2.bk2210-title, h3.bk2210-title, h4.bk2210-title {
 	line-height: 1.5;
+	font-family: $SSP;
 }
 
 h1.bk2210-title {
+	font-family: $SSP;
 	font-size: 53px;
 	font-weight: normal;
+	padding: 0;
+	margin: 0;
+	text-transform: none;
 	line-height: 1;
+	color: $white;
 
 	@include small {
 		font-size: 53px;
@@ -40,8 +47,9 @@ h1.bk2210-title {
 
 	small {
 		display: block;
-		font-weight: 200;
-		font-size: .35em;
+		font-weight: 400;
+		font-size: .35em;		
+		text-transform: none;
 	}
 
 }
@@ -50,6 +58,7 @@ h2.bk2210-title {
 	font-size: 26px;
 	font-weight: 200;
 	line-height: 1;
+	margin: 0;
 	margin-bottom: .2em;
 
 
@@ -74,6 +83,7 @@ h3.bk2210-title{
 p.bk2210-paragraph {
    line-height: 1.3;
    margin: 1em 0;
+   font-family: Source Sans Pro,sans-serif;
 
    @include medium {
    	font-size: 18px;
@@ -83,6 +93,7 @@ p.bk2210-paragraph {
 
 small.bk2210-small  {
 	font-size: .8em;
+	font-weight: 100;
 }
 
 b.bk2210-bold ,

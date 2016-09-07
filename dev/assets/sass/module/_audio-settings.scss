@@ -13,12 +13,17 @@
 		@include small {
 			margin-top: 3em;
 		}
+
+		p {
+			font-weight: 100;
+		}
 	}
 
 	h2 {
 		color: $green;
 		padding-left: .4em;
 		position: relative;
+		text-shadow: 0 0 18px #abd037;
 
 		&:before {
 			content: "";
@@ -34,6 +39,7 @@
 	aside {
 		position: absolute;
 		bottom: -80px;
+		right: 0;
 
 		@include small {
 			bottom: -10px;

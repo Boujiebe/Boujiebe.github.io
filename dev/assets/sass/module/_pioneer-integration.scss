@@ -1,0 +1,55 @@
+// pioneer specific integration styles
+
+#page-title {
+	display: none;
+}
+
+#bk2210-mobile-nav {
+	top: 50px;
+
+	@media (min-width: 768px) {
+		top: 124px;
+	}
+
+	@media (min-width: 795px) {
+		top: 124px;
+	}
+}
+
+#bk2210-mobile-nav.bk2210-sticky {
+    top: 0;
+}
+
+#bk2210-site-nav.bk2210-active {
+    top: 136px;
+
+    @media (min-width: 768px) {
+    	top: 210px;
+    }
+}
+
+#bk2210-site-nav {
+
+	@include large {
+		top: 124px;
+	}
+}
+ 
+.bk2210-sticky #bk2210-site-nav.bk2210-active {
+	top: 65px;
+}
+
+
+#bk2210-site-main {
+    margin-top: 149px;
+}
+
+.bk2210-wrapper ul {
+	list-style: none !important;
+	padding: 0 !important;
+}
+
+#bk2210-key-features {
+    z-index: 8;
+    position: relative;
+}

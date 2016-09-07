@@ -22,11 +22,12 @@
 		.bk2210-btn-green {
 			font-size: 14px;
 			margin: 0;
+			line-height: 1;
 		}
 
 		.s-menu {
 			font-size: 32px;
-		}
+		} 
 	}
 
 	@include large {
@@ -130,17 +131,16 @@
 		height: 66px;
 		top: 0;
 
-		&.bk2210-sticky {
-			line-height: 66px;
-			height: 66px;
+		.bk2210-sticky & {
+			top: 0;
 		}
 
 		ul {
 			justify-content: space-around;
 
 			li {
-				margin: 1em 0;
-				padding: .5em 0;
+				margin: 1em 0 !important;
+				padding: .5em 0 !important;
 				flex: initial;
 				font-size: 14px;
 
@@ -168,7 +168,7 @@
 				}
 
 				&:last-child {
-					padding: 0;
+					padding: 0 !important;
 
 					a {
 						display: inline-block;
